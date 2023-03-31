@@ -7,4 +7,15 @@ public class Auto {
     int numllantas;
 
     Motor mimotor;
+    Persona propietario;
+
+
+    double velocidadAuto() {
+        double velocidadKm = 0;
+        
+        velocidadKm = mimotor.fuerza() * numllantas;
+
+        return velocidadKm;
+
+    }
 }
